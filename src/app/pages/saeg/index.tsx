@@ -8,13 +8,13 @@ export default function SAEG() {
     <div>
       <h1
         className="whitespace-nowrap poppins-extrabold color-change"
-        style={{ fontSize: setSizeByScreen(30, 50, 75) }}
+        style={{ fontSize: setSizeByScreen(20, 30, 50, 75) }}
       >
         SAEG
       </h1>
       <p
         className="text-justify"
-        style={{ fontSize: setSizeByScreen(13, 15, 17) }}
+        style={{ fontSize: setSizeByScreen(12, 13, 15, 17) }}
       >
         O SAEG App é a plataforma central de atendimento para os cidadãos de
         Guaratinguetá que utilizam os serviços de água e esgoto da cidade.
@@ -26,13 +26,13 @@ export default function SAEG() {
       &nbsp;
       <p
         className="text-justify"
-        style={{ fontSize: setSizeByScreen(13, 15, 17) }}
+        style={{ fontSize: setSizeByScreen(12, 13, 15, 17) }}
       >
         O Aplicativo também conta com um sistema de notificações, mantendo os
         usuários atualizados sobre a situação dos serviços de água em sua área.
       </p>
       &nbsp;
-      <div style={{ fontSize: setSizeByScreen(21, 23, 25) }}>
+      <div style={{ fontSize: setSizeByScreen(19, 21, 23, 25) }}>
         <BiLogoPlayStore className="inline" /> -{" "}
         <a
           target="_blank"
@@ -42,7 +42,7 @@ export default function SAEG() {
           Play Store
         </a>
       </div>
-      <div style={{ fontSize: setSizeByScreen(21, 23, 25) }}>
+      <div style={{ fontSize: setSizeByScreen(19, 21, 23, 25) }}>
         <FaAppStoreIos className="inline" /> -{" "}
         <a
           target="_blank"

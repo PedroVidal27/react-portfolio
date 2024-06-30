@@ -8,13 +8,13 @@ export default function Caragua() {
     <div>
       <h1
         className="whitespace-nowrap poppins-extrabold color-change"
-        style={{ fontSize: setSizeByScreen(30, 50, 75) }}
+        style={{ fontSize: setSizeByScreen(20, 30, 50, 75) }}
       >
         Caraguá 156
       </h1>
       <p
         className="text-justify"
-        style={{ fontSize: setSizeByScreen(13, 15, 17) }}
+        style={{ fontSize: setSizeByScreen(12, 13, 15, 17) }}
       >
         O aplicativo 156 de Caraguatatuba é um projeto inovador desenvolvido em
         React Native, criado para oferecer maior comodidade à população da
@@ -25,14 +25,14 @@ export default function Caragua() {
       &nbsp;
       <p
         className="text-justify"
-        style={{ fontSize: setSizeByScreen(13, 15, 17) }}
+        style={{ fontSize: setSizeByScreen(12, 13, 15, 17) }}
       >
         Além disso, o aplicativo conta com um sistema de notificações push que
         mantém os usuários informados sobre eventos relevantes, desastres e
         comemorações.
       </p>
       &nbsp;
-      <div style={{ fontSize: setSizeByScreen(21, 23, 25) }}>
+      <div style={{ fontSize: setSizeByScreen(19, 21, 23, 25) }}>
         <BiLogoPlayStore className="inline" /> -{" "}
         <a
           target="_blank"
@@ -42,7 +42,7 @@ export default function Caragua() {
           Play Store
         </a>
       </div>
-      <div style={{ fontSize: setSizeByScreen(21, 23, 25) }}>
+      <div style={{ fontSize: setSizeByScreen(19, 21, 23, 25) }}>
         <FaAppStoreIos className="inline" /> -{" "}
         <a
           target="_blank"

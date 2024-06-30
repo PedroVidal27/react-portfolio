@@ -7,13 +7,13 @@ export default function SSAD() {
     <div>
       <h1
         className="whitespace-nowrap poppins-extrabold color-change"
-        style={{ fontSize: setSizeByScreen(28, 42, 75) }}
+        style={{ fontSize: setSizeByScreen(20, 30, 50, 75) }}
       >
         SSAD
       </h1>
       <p
         className="text-justify"
-        style={{ fontSize: setSizeByScreen(13, 15, 17) }}
+        style={{ fontSize: setSizeByScreen(12, 13, 15, 17) }}
       >
         O Sistema de Solicitações e Acompanhamento de Demandas, desenvolvido em
         ASP.NET, gerencia os aplicativos 156 SAEG e 156 Caraguatatuba. Ele
@@ -26,14 +26,14 @@ export default function SSAD() {
       &nbsp;
       <p
         className="text-justify"
-        style={{ fontSize: setSizeByScreen(13, 15, 17) }}
+        style={{ fontSize: setSizeByScreen(12, 13, 15, 17) }}
       >
         No meu trabalho com o Sistema de Solicitações e Acompanhamento de
         Demandas, fui responsável pela manutenção e pelo suporte na
         implementação de novas funcionalidades.
       </p>
       &nbsp;
-      <div style={{ fontSize: setSizeByScreen(21, 23, 25) }}>
+      <div style={{ fontSize: setSizeByScreen(19, 21, 23, 25) }}>
         <TfiWorld className="inline" /> -{" "}
         <a
           target="_blank"

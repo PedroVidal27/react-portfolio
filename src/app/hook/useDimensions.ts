@@ -12,13 +12,18 @@ export default function useDimensions() {
     const handleResize = () => {
       setWindowDimensions({
         width: window.innerWidth,
-        height: window.innerHeight
+        height: window.innerHeight,
       });
     };
     window.addEventListener("resize", handleResize);
     handleResize();
     return () => window.removeEventListener("resize", handleResize);
   }, []);
+
+  const isExtraSmallDevice = () => {
+    if (!isClient) return false;
+    return windowDimensions.width <= 675;
+  };
 
   const isSmallDevice = () => {
     if (!isClient) return false;
@@ -35,10 +40,18 @@ export default function useDimensions() {
     return windowDimensions.width >= 1450;
   };
 
-  const setSizeByScreen = (smallScreen: number, mediumScreen: number, largeScreen: number) => {
+  const setSizeByScreen = (
+    extraSmallScreen: number,
+    smallScreen: number,
+    mediumScreen: number,
+    largeScreen: number
+  ) => {
     if (!isClient) return smallScreen;
     const { width } = windowDimensions;
-    if (width <= 675) {
+    if (width < 400) {
+      return extraSmallScreen;
+    }
+    if (width >= 400 && width <= 675) {
       return smallScreen;
     }
     if (width > 675 && width < 1450) {
@@ -49,6 +62,7 @@ export default function useDimensions() {
 
   return {
     setSizeByScreen,
+    isExtraSmallDevice,
     isSmallDevice,
     isMediumDevice,
     isLargeDevice,

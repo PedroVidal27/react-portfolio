@@ -39,8 +39,8 @@ export default function Home() {
             <a onClick={() => handleClick(<MainPage />)}>
               <img
                 style={{
-                  width: setSizeByScreen(50, 60, 90),
-                  height: setSizeByScreen(50, 60, 90),
+                  width: setSizeByScreen(35, 50, 60, 90),
+                  height: setSizeByScreen(35, 50, 60, 90),
                 }}
                 src={logo.src}
               />
@@ -52,22 +52,22 @@ export default function Home() {
               href="https://github.com/PedroVidal27"
               className="underline"
             >
-              <FaGithub size={setSizeByScreen(40, 45, 75)} />
+              <FaGithub size={setSizeByScreen(28, 40, 45, 75)} />
             </a>
             <a
               target="_blank"
               href="https://www.linkedin.com/in/pedro-c-vidal/"
               className="underline"
             >
-              <FaLinkedin size={setSizeByScreen(45, 50, 80)} />
+              <FaLinkedin size={setSizeByScreen(30, 45, 50, 80)} />
             </a>
           </div>
         </nav>
         <div className="flex flex-row w-full h-full">
           <div
             style={{
-              paddingTop: setSizeByScreen(40, 50, 70),
-              marginLeft: setSizeByScreen(20, 30, 75),
+              paddingTop: setSizeByScreen(30, 40, 50, 70),
+              marginLeft: setSizeByScreen(10, 20, 30, 75),
             }}
             className={`flex flex-col w-[100%] h-full ${
               isFadingOut ? "fade-out" : "fade-in"
@@ -77,15 +77,15 @@ export default function Home() {
           </div>
           <div
             style={{
-              paddingTop: setSizeByScreen(45, 50, 100),
-              marginRight: setSizeByScreen(20, 30, 75),
-              fontSize: setSizeByScreen(13, 15, 17),
+              paddingTop: setSizeByScreen(30, 45, 50, 100),
+              marginRight: setSizeByScreen(10, 20, 30, 75),
+              fontSize: setSizeByScreen(12, 13, 15, 17),
             }}
             className="flex flex-col w-full h-full items-end"
           >
             <h1
               className="whitespace-nowrap pb-10 poppins-extrabold color-change"
-              style={{ fontSize: setSizeByScreen(30, 50, 45) }}
+              style={{ fontSize: setSizeByScreen(20, 30, 50, 45) }}
             >
               Projetos
             </h1>

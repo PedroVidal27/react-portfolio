@@ -7,13 +7,13 @@ export default function MainPage() {
     <>
       <h1
         className="w-[10vw] whitespace-nowrap poppins-extrabold color-change"
-        style={{ fontSize: setSizeByScreen(30, 50, 75) }}
+        style={{ fontSize: setSizeByScreen(20, 30, 50, 75) }}
       >
         <Typewritter text={"Olá Mundo!"} delay={80} />
       </h1>
       <p
         className="text-justify"
-        style={{ fontSize: setSizeByScreen(13, 15, 17) }}
+        style={{ fontSize: setSizeByScreen(12, 13, 15, 17) }}
       >
         Meu nome é Pedro Vidal, sou Desenvolvedor Front-End e Mobile de São
         Paulo. Desenvolvi aplicações no ramo do serviço público que se
@@ -22,7 +22,7 @@ export default function MainPage() {
       &nbsp;
       <div
         className="text-justify"
-        style={{ fontSize: setSizeByScreen(13, 15, 17) }}
+        style={{ fontSize: setSizeByScreen(12, 13, 15, 17) }}
       >
         <p>Fui Vice-Presidente do D.A IFSP-CAR em 2024.</p>
         &nbsp;
@@ -34,11 +34,11 @@ export default function MainPage() {
       </div>
       <h1
         className="whitespace-nowrap pt-10"
-        style={{ fontSize: setSizeByScreen(30, 50, 45) }}
+        style={{ fontSize: setSizeByScreen(20, 30, 50, 45) }}
       >
         Afiliações:
       </h1>
-      <div>
+      <div style={{ fontSize: setSizeByScreen(12, 13, 15, 17) }}>
         <a
           target="_blank"
           href="https://asimovjr.com.br/"
@@ -49,7 +49,7 @@ export default function MainPage() {
         | 2021 {"->"} 2022
       </div>
       <br />
-      <div>
+      <div style={{ fontSize: setSizeByScreen(12, 13, 15, 17) }}>
         <a
           target="_blank"
           href="https://dev-unifei.github.io/"
@@ -60,7 +60,7 @@ export default function MainPage() {
         | 2022 {"->"} 2023
       </div>
       <br />
-      <div>
+      <div style={{ fontSize: setSizeByScreen(12, 13, 15, 17) }}>
         <p className="whitespace-nowrap">
           <a
             target="_blank"
