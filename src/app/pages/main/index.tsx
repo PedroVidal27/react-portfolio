@@ -6,7 +6,7 @@ export default function MainPage() {
   return (
     <>
       <h1
-        className="w-[10vw] whitespace-nowrap poppins-extrabold"
+        className="w-[10vw] whitespace-nowrap poppins-extrabold color-change"
         style={{ fontSize: setSizeByScreen(30, 50, 75) }}
       >
         <Typewritter text={"Olá Mundo!"} delay={80} />

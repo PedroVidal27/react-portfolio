@@ -23,6 +23,14 @@ body {
   cursor: default
 }
 
+.color-change, a {
+  transition: color 0.5s ease;
+}
+
+.color-change:hover, a:hover {
+  color: #A41623; /* Color on hover */
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;

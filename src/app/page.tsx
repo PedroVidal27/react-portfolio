@@ -76,7 +76,7 @@ export default function Home() {
             className="flex flex-col w-full h-full items-end"
           >
             <h1
-              className="whitespace-nowrap pb-10 poppins-extrabold"
+              className="whitespace-nowrap pb-10 poppins-extrabold color-change"
               style={{ fontSize: setSizeByScreen(30, 50, 45) }}
             >
               Projetos
