@@ -1,6 +1,6 @@
 .blinking-cursor::after {
   content: "|";
-  color: rgb(var(--foreground-rgb));
+  color: #FFFFFF;
   font-weight: 400;
   animation: blink 1s step-end infinite;
 }
