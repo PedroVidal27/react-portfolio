@@ -7,7 +7,7 @@ export default function SAEG() {
   return (
     <div>
       <h1
-        className="whitespace-nowrap poppins-extrabold"
+        className="whitespace-nowrap poppins-extrabold color-change"
         style={{ fontSize: setSizeByScreen(30, 50, 75) }}
       >
         SAEG

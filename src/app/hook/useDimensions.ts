@@ -1,42 +1,42 @@
 "use client";
 import { useState, useEffect } from "react";
 
-const getWindowDimensions = () => {
-  const { innerWidth: width, innerHeight: height } = window;
-  return {
-    width,
-    height,
-  };
-};
+const defaultDimensions = { width: 0, height: 0 };
 
 export default function useDimensions() {
-  const [windowDimensions, setWindowDimensions] = useState(getWindowDimensions());
+  const [windowDimensions, setWindowDimensions] = useState(defaultDimensions);
+  const [isClient, setIsClient] = useState(false);
 
   useEffect(() => {
+    setIsClient(true);
     const handleResize = () => {
-      setWindowDimensions(getWindowDimensions());
+      setWindowDimensions({
+        width: window.innerWidth,
+        height: window.innerHeight
+      });
     };
-
     window.addEventListener("resize", handleResize);
+    handleResize();
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
   const isSmallDevice = () => {
-    const { width } = windowDimensions;
-    return width <= 675;
+    if (!isClient) return false;
+    return windowDimensions.width <= 675;
   };
 
   const isMediumDevice = () => {
-    const { width } = windowDimensions;
-    return width > 675 && width < 1450;
+    if (!isClient) return false;
+    return windowDimensions.width > 675 && windowDimensions.width < 1450;
   };
 
   const isLargeDevice = () => {
-    const { width } = windowDimensions;
-    return width >= 1450;
+    if (!isClient) return false;
+    return windowDimensions.width >= 1450;
   };
 
   const setSizeByScreen = (smallScreen: number, mediumScreen: number, largeScreen: number) => {
+    if (!isClient) return smallScreen;
     const { width } = windowDimensions;
     if (width <= 675) {
       return smallScreen;

@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import useDimensions from "./hook/useDimensions";
 import "./styles.css";
 import logo from "../assets/logo.png";
@@ -13,6 +13,12 @@ import SSAD from "./pages/ssad";
 export default function Home() {
   const { setSizeByScreen, isLargeDevice } = useDimensions();
   const [isFadingOut, setIsFadingOut] = useState(false);
+  const [isClient, setIsClient] = useState(false);
+
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
+  
   const [content, setContent] = useState<JSX.Element | undefined>(undefined);
 
   const handleClick = (newContent: JSX.Element | undefined) => {
@@ -22,6 +28,8 @@ export default function Home() {
       setContent(newContent);
     }, 1000);
   };
+
+  if(!isClient) return <></>
 
   return (
     <main className="flex flex-col items-center justify-center montserrat">
