@@ -20,7 +20,14 @@ jobs:
           node-version: "18.x"
 
       - name: Installing my packages
-        run: npm ci
+        run: |
+          if [ -e yarn.lock ]; then
+          yarn install --frozen-lockfile
+          elif [ -e package-lock.json ]; then
+          npm ci
+          else
+          npm i
+          fi
 
       - name: Extract repository name
         run: echo "BASE_PATH=/$(echo $GITHUB_REPOSITORY | cut -d '/' -f 2)" >> $GITHUB_ENV
