@@ -21,9 +21,15 @@ export default function SAEG() {
         Desenvolvido em React Native, o aplicativo oferece uma solução prática
         para gerenciar todas as demandas relacionadas ao sistema de saneamento,
         incluindo solicitações de religações, pagamentos de contas,
-        desligamentos, relatórios de vazamentos e reclamações. Além disso, o
-        SAEG App conta com um sistema de notificações, mantendo os usuários
-        atualizados sobre a situação dos serviços de água em sua área.
+        desligamentos, relatórios de vazamentos e reclamações.
+      </p>
+      &nbsp;
+      <p
+        className="text-justify"
+        style={{ fontSize: setSizeByScreen(13, 15, 17) }}
+      >
+        O Aplicativo também conta com um sistema de notificações, mantendo os
+        usuários atualizados sobre a situação dos serviços de água em sua área.
       </p>
       &nbsp;
       <div style={{ fontSize: setSizeByScreen(21, 23, 25) }}>

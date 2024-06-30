@@ -69,7 +69,7 @@ export default function Home() {
               paddingTop: setSizeByScreen(40, 50, 70),
               marginLeft: setSizeByScreen(20, 30, 75),
             }}
-            className={`flex flex-col w-[85%] h-full ${
+            className={`flex flex-col w-[100%] h-full ${
               isFadingOut ? "fade-out" : "fade-in"
             }`}
           >

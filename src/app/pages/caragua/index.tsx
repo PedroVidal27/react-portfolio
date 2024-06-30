@@ -20,9 +20,16 @@ export default function Caragua() {
         React Native, criado para oferecer maior comodidade à população da
         cidade. Ele facilita a comunicação com a prefeitura, permitindo a
         realização de denúncias, o atendimento de solicitações dos cidadãos, o
-        agendamento de vacinas e a inscrição em eventos importantes. Além disso,
-        o aplicativo conta com um sistema de notificações push que mantém os
-        usuários informados sobre eventos relevantes, desastres e comemorações.
+        agendamento de vacinas e a inscrição em eventos importantes.
+      </p>
+      &nbsp;
+      <p
+        className="text-justify"
+        style={{ fontSize: setSizeByScreen(13, 15, 17) }}
+      >
+        Além disso, o aplicativo conta com um sistema de notificações push que
+        mantém os usuários informados sobre eventos relevantes, desastres e
+        comemorações.
       </p>
       &nbsp;
       <div style={{ fontSize: setSizeByScreen(21, 23, 25) }}>
