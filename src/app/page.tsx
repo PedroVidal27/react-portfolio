@@ -9,6 +9,7 @@ import MainPage from "./pages/main";
 import SAEG from "./pages/saeg";
 import Caragua from "./pages/caragua";
 import SSAD from "./pages/ssad";
+import DiscordBot from "./pages/discord-bot";
 
 export default function Home() {
   const { setSizeByScreen, isLargeDevice } = useDimensions();
@@ -109,6 +110,12 @@ export default function Home() {
               {isLargeDevice()
                 ? " - Sistema de Solicitações e Acompanhamento de Demandas"
                 : undefined}
+            </a>
+            <a
+              className="inline underline font-bold"
+              onClick={() => handleClick(<DiscordBot />)}
+            >
+              Discord Bot
             </a>
             <a
               className="inline underline font-bold"
