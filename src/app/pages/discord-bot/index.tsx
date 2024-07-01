@@ -27,7 +27,7 @@ export default function DiscordBot() {
         <FaGithub className="inline" /> -{" "}
         <a
           target="_blank"
-          href="https://play.google.com/store/apps/details?id=com.jaasolucoes.ssadCaragua&hl=pt_BR"
+          href="https://github.com/PedroVidal27/nodejs-discordbot"
           className="underline"
         >
           Github
