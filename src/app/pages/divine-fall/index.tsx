@@ -9,7 +9,7 @@ export default function DivineFall() {
         className="whitespace-nowrap poppins-extrabold color-change"
         style={{ fontSize: setSizeByScreen(18, 24, 50, 75) }}
       >
-        The Divine Fall
+        Divine Fall
       </h1>
       <p
         className="text-justify"
